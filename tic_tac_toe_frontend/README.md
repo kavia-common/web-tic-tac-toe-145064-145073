@@ -10,6 +10,7 @@ Modern, minimalist Tic Tac Toe game with a centered single-page layout and Ocean
 - Lightweight: pure React + CSS, no UI frameworks
 
 ## Getting Started
+- npm install — Install dependencies
 - npm start — Run in development mode at http://localhost:3000
 - npm test — Run tests
 - npm run build — Build production bundle
