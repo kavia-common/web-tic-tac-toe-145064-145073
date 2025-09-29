@@ -63,6 +63,7 @@ export default function TicTacToe() {
             <strong>{statusText}</strong>
           </span>
         </div>
+
         {!winner && !draw && (
           <div className="status-row" role="status">
             <span className={`badge ${currentPlayer.toLowerCase()}`}>
@@ -71,6 +72,7 @@ export default function TicTacToe() {
             <span className="badge">Local Multiplayer</span>
           </div>
         )}
+
         {(winner || draw) && (
           <div className="status-row">
             <span className="badge">Game Over</span>

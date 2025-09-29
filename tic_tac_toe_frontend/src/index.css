@@ -5,7 +5,7 @@
   --bg: #f9fafb;          /* Background */
   --surface: #ffffff;     /* Surface */
   --text: #111827;        /* Text */
-  --muted: #6B7280;       /* Tailwind gray-500 equivalent */
+  --muted: #6B7280;       /* Subtle gray */
   --ring: rgba(37, 99, 235, 0.35);
   --shadow: 0 10px 25px rgba(17, 24, 39, 0.08), 0 4px 8px rgba(17, 24, 39, 0.06);
   --radius: 16px;
@@ -15,17 +15,14 @@
 }
 
 * { box-sizing: border-box; }
-html, body, #root {
-  height: 100%;
-}
+html, body, #root { height: 100%; }
 
 body {
   margin: 0;
   font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   color: var(--text);
-  background: linear-gradient(135deg, rgba(59,130,246,0.1), #f8fafc 50%) fixed,
-              var(--bg);
+  background: linear-gradient(135deg, rgba(59,130,246,0.1), #f8fafc 50%) fixed, var(--bg);
 }
 
 /* Layout shells */
@@ -56,36 +53,16 @@ body {
 }
 
 /* Header */
-.header {
-  text-align: center;
-  margin-bottom: 18px;
-}
-.title {
-  margin: 0;
-  font-size: 28px;
-  letter-spacing: -0.02em;
-}
-.subtitle {
-  margin: 6px 0 0 0;
-  color: var(--muted);
-  font-size: 14px;
-}
+.header { text-align: center; margin-bottom: 18px; }
+.title { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+.subtitle { margin: 6px 0 0 0; color: var(--muted); font-size: 14px; }
 
 /* Footer */
-.footer {
-  text-align: center;
-  margin-top: 18px;
-}
-.credits {
-  margin: 0;
-  color: var(--muted);
-  font-size: 12px;
-}
+.footer { text-align: center; margin-top: 18px; }
+.credits { margin: 0; color: var(--muted); font-size: 12px; }
 
 /* Surface helper */
-.surface {
-  background: var(--surface);
-}
+.surface { background: var(--surface); }
 
 /* Buttons */
 .btn {
@@ -102,10 +79,7 @@ body {
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition), border-color var(--transition);
   user-select: none;
 }
-.btn:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow);
-}
+.btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
 .btn:active { transform: translateY(0); }
 
 /* Variants */
@@ -117,10 +91,7 @@ body {
 .btn-primary:hover {
   background: linear-gradient(180deg, rgba(37,99,235,1), rgba(37,99,235,0.92));
 }
-.btn-ghost {
-  background: transparent;
-  border-color: rgba(17,24,39,0.08);
-}
+.btn-ghost { background: transparent; border-color: rgba(17,24,39,0.08); }
 
 /* Status chip */
 .chip {
@@ -135,6 +106,7 @@ body {
   box-shadow: 0 6px 14px rgba(37,99,235,0.12);
   transition: transform var(--transition), box-shadow var(--transition);
 }
+.chip strong { margin-left: 6px; }
 .chip.success {
   background: rgba(245,158,11,0.10);
   border-color: rgba(245,158,11,0.25);
